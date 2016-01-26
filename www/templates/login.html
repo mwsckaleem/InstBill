@@ -1,0 +1,31 @@
+<ion-modal-view class="login_page">
+  <ion-header-bar>
+    <h1 class="title text-center">Login</h1>
+    <div class="buttons">
+    </div>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="logo-wrapper text-center">
+      <img src="img/company-logo.png" class="logo" />
+    </div>
+
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" ng-model="loginData.username" placeholder="USERNAME">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="loginData.password" placeholder="PASSWORD">
+        </label>
+        <label class="item">
+          <button class="button button-block login-btn" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+
+    <!--<h4 class="login-error"> Please enter valid credentials! </h4>-->
+
+  </ion-content>
+
+</ion-modal-view>
